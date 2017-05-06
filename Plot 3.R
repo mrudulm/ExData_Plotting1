@@ -15,7 +15,7 @@ source("LoadHHPCdata.R")
 
 png("plot3.png", width=480, height=480)
 
-with(df_hhpc, plot(Date, Sub_metering_1,ylab="Energy Sub Meeting", xlab="",type = "n"))
+with(df_hhpc, plot(Date, Sub_metering_1,ylab="Energy Sub Metering", xlab="",type = "n"))
 with(df_hhpc, points(Date, Sub_metering_1, col = "black",type="l")) 
 with(df_hhpc, points(Date, Sub_metering_2, col = "red",type="l"))
 with(df_hhpc, points(Date, Sub_metering_3, col = "blue",type="l"))
